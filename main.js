@@ -35,7 +35,7 @@ addToDoButton.addEventListener('click',function(e){
         inputField.value = '';
 
         newTaskDoneButton.addEventListener('click', function(){
-            if(newTaskDesc.style.textDecoration==='none')newTaskDesc.style.textDecoration = 'line-through';
+            if(newTaskDesc.style.textDecoration!='line-through')newTaskDesc.style.textDecoration = 'line-through';
             else newTaskDesc.style.textDecoration='none';
         })
 
